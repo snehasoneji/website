@@ -208,7 +208,8 @@ p {
 }
 
 .show-menu {
-  display: flex;
+    display: flex;
+    z-index: 1;
 }
 
 .gift-section {
