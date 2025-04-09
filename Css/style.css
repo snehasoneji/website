@@ -92,6 +92,10 @@ p {
   background: #fff;
   padding: 15px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+   
 }
   
 .header-main {
@@ -208,8 +212,8 @@ p {
 }
 
 .show-menu {
-    display: flex;
-    z-index: 1;
+  display: flex;
+  z-index: 1;
 }
 
 .gift-section {
@@ -1115,43 +1119,6 @@ p {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   
