@@ -1195,14 +1195,13 @@ p {
 }
 
 .cele-section {
-  position: relative;
-  text-align: center;
-  margin: auto;
-  background: url('../Img/card-bg-img.png') center center no-repeat;
-  background-size: contain;
-  padding: 151px 0;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    background: url('../Img/card-bg-img.png') center center no-repeat;
+    background-size: contain;
+    padding: 151px 0;
 }
-
 .cele-section .container {
   max-width: 575px;
   margin: auto;
