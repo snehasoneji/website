@@ -1198,7 +1198,7 @@ p {
   position: relative;
   text-align: center;
   margin: auto;
-  background: url('Img/Img/card-bg-img.png') center center no-repeat;
+  background: url('../Img/card-bg-img.png') center center no-repeat;
   background-size: contain;
   padding: 151px 0;
 }
