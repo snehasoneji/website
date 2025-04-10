@@ -45,19 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
         left: box.offsetWidth * index,
         behavior: 'smooth'
       });
-    }, 3000); // Change every 3 sec
+    }, 3000); 
   }
 });
-
-
-
-
-
-
-
-
-
-
 
 
 
