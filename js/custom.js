@@ -51,3 +51,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+window.addEventListener('load', function () {
+  const carousel = document.querySelector('.idea-grid-desktop');
+
+  if (window.innerWidth <= 768 && carousel) {
+    let scrollDirection = 1;
+
+    setInterval(() => {
+    
+      carousel.scrollBy({
+        left: scrollDirection * 2, 
+        behavior: 'smooth'
+      });
+
+     
+      if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 1) {
+        scrollDirection = -1;
+      } else if (carousel.scrollLeft <= 1) {
+        scrollDirection = 1;
+      }
+    }, 20); 
+  }
+});
