@@ -405,9 +405,8 @@ p {
   }
 
   .gift-section {
-    padding: 40px 0;
-  }
-
+    padding: 63px 0;
+}
   .features {
     gap: 15px;
   }
@@ -1389,10 +1388,8 @@ p {
 
 @media (max-width: 768px) {
   .forward-section {
-    padding: 500px 0 318px 0;
-    background: radial-gradient(elli to center, rgba(230, 230, 255, 0.6) 0%, rgba(220, 255, 230, 0.6) 100%);
-  }
-
+    padding: 100px 0 100px 0;
+}
   .forward-main {
     flex-direction: column;
     align-items: center;
@@ -1461,5 +1458,130 @@ p {
     border-radius: 12px;
   }
 
+}
+
+.idea-section {
+  text-align: center;
+  padding: 0 0 70px 0;
+}
+
+
+.idea-section h6 {
+  color: #635BFF;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0 0 7px 0;
+}
+
+.idea-section h4 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 120%;
+  color: #001D3D;
+  margin: 0 0 21px 0;
+}
+
+.idea-grid-desktop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 137px 117px 182px 117px;
+  border-radius: 32px;
+  background-color: rgb(248 248 249 / 94%);
+  position: relative;
+  z-index: 1;
+}
+
+.idea-grid-desktop .loop-card-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(137, 98, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+  filter: blur(100px);
+  z-index: 0;
+  pointer-events: none;
 
 }
+
+.idea-card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.idea-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  color: white;
+  text-align: left;
+}
+
+.emoji-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .idea-grid-desktop {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 40px 16px 80px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    background: none;
+  }
+
+  .idea-grid-desktop .idea-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .idea-grid-desktop .loop-card-bg {
+    display: none;
+    
+  }
+
+  .idea-card img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    filter: brightness(0.85);
+  }
+
+  .idea-section .container{
+    padding: 0;
+  }
+
+  .idea-section{
+    padding: 0;
+  }
+}
+
+
+
+
+
+
